@@ -8,8 +8,6 @@ var UserSchema = new mongoose.Schema({
     password: String,
     coutry: String,
     contact: Number,
-
-
     projects: [
         { 
             tag: String,
@@ -37,7 +35,5 @@ var UserSchema = new mongoose.Schema({
             date: Date
         }
     ],
-
-
     signedIn: { type: Date, Default: Date.now }
 })
